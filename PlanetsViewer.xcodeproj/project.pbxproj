@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7A1BDAA2BC9B1F900AEB53B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F7A1BDA92BC9B1F900AEB53B /* RealityKitContent */; };
+		F7A1BDAC2BC9B1F900AEB53B /* PlanetsViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDAB2BC9B1F900AEB53B /* PlanetsViewerApp.swift */; };
+		F7A1BDAE2BC9B1F900AEB53B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDAD2BC9B1F900AEB53B /* ContentView.swift */; };
+		F7A1BDB02BC9B1F900AEB53B /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDAF2BC9B1F900AEB53B /* ImmersiveView.swift */; };
+		F7A1BDB22BC9B1FA00AEB53B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */; };
+		F7A1BDB52BC9B1FA00AEB53B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1BDB42BC9B1FA00AEB53B /* Preview Assets.xcassets */; };
+		F7A1BDBD2BC9B9C700AEB53B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */; };
+		F7A1BDBF2BC9BDC900AEB53B /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7A1BDA42BC9B1F900AEB53B /* PlanetsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A1BDA82BC9B1F900AEB53B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		F7A1BDAB2BC9B1F900AEB53B /* PlanetsViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewerApp.swift; sourceTree = "<group>"; };
+		F7A1BDAD2BC9B1F900AEB53B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7A1BDAF2BC9B1F900AEB53B /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7A1BDB42BC9B1FA00AEB53B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7A1BDB62BC9B1FA00AEB53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7A1BDA12BC9B1F900AEB53B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A1BDAA2BC9B1F900AEB53B /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7A1BD9B2BC9B1F900AEB53B = {
+			isa = PBXGroup;
+			children = (
+				F7A1BDA62BC9B1F900AEB53B /* PlanetsViewer */,
+				F7A1BDA72BC9B1F900AEB53B /* Packages */,
+				F7A1BDA52BC9B1F900AEB53B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7A1BDA52BC9B1F900AEB53B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7A1BDA42BC9B1F900AEB53B /* PlanetsViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7A1BDA62BC9B1F900AEB53B /* PlanetsViewer */ = {
+			isa = PBXGroup;
+			children = (
+				F7A1BDAB2BC9B1F900AEB53B /* PlanetsViewerApp.swift */,
+				F7A1BDAD2BC9B1F900AEB53B /* ContentView.swift */,
+				F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */,
+				F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */,
+				F7A1BDAF2BC9B1F900AEB53B /* ImmersiveView.swift */,
+				F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */,
+				F7A1BDB62BC9B1FA00AEB53B /* Info.plist */,
+				F7A1BDB32BC9B1FA00AEB53B /* Preview Content */,
+			);
+			path = PlanetsViewer;
+			sourceTree = "<group>";
+		};
+		F7A1BDA72BC9B1F900AEB53B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F7A1BDA82BC9B1F900AEB53B /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		F7A1BDB32BC9B1FA00AEB53B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7A1BDB42BC9B1FA00AEB53B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7A1BDA32BC9B1F900AEB53B /* PlanetsViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7A1BDB92BC9B1FA00AEB53B /* Build configuration list for PBXNativeTarget "PlanetsViewer" */;
+			buildPhases = (
+				F7A1BDA02BC9B1F900AEB53B /* Sources */,
+				F7A1BDA12BC9B1F900AEB53B /* Frameworks */,
+				F7A1BDA22BC9B1F900AEB53B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetsViewer;
+			packageProductDependencies = (
+				F7A1BDA92BC9B1F900AEB53B /* RealityKitContent */,
+			);
+			productName = PlanetsViewer;
+			productReference = F7A1BDA42BC9B1F900AEB53B /* PlanetsViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7A1BD9C2BC9B1F900AEB53B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F7A1BDA32BC9B1F900AEB53B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = F7A1BD9F2BC9B1F900AEB53B /* Build configuration list for PBXProject "PlanetsViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7A1BD9B2BC9B1F900AEB53B;
+			productRefGroup = F7A1BDA52BC9B1F900AEB53B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7A1BDA32BC9B1F900AEB53B /* PlanetsViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7A1BDA22BC9B1F900AEB53B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A1BDB52BC9B1FA00AEB53B /* Preview Assets.xcassets in Resources */,
+				F7A1BDB22BC9B1FA00AEB53B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7A1BDA02BC9B1F900AEB53B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A1BDAE2BC9B1F900AEB53B /* ContentView.swift in Sources */,
+				F7A1BDAC2BC9B1F900AEB53B /* PlanetsViewerApp.swift in Sources */,
+				F7A1BDB02BC9B1F900AEB53B /* ImmersiveView.swift in Sources */,
+				F7A1BDBF2BC9BDC900AEB53B /* PlanetDetailView.swift in Sources */,
+				F7A1BDBD2BC9B9C700AEB53B /* Planet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F7A1BDB72BC9B1FA00AEB53B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		F7A1BDB82BC9B1FA00AEB53B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		F7A1BDBA2BC9B1FA00AEB53B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanetsViewer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knight.elliot.PlanetsViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		F7A1BDBB2BC9B1FA00AEB53B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanetsViewer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knight.elliot.PlanetsViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7A1BD9F2BC9B1F900AEB53B /* Build configuration list for PBXProject "PlanetsViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7A1BDB72BC9B1FA00AEB53B /* Debug */,
+				F7A1BDB82BC9B1FA00AEB53B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7A1BDB92BC9B1FA00AEB53B /* Build configuration list for PBXNativeTarget "PlanetsViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7A1BDBA2BC9B1FA00AEB53B /* Debug */,
+				F7A1BDBB2BC9B1FA00AEB53B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7A1BDA92BC9B1F900AEB53B /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F7A1BD9C2BC9B1F900AEB53B /* Project object */;
+}

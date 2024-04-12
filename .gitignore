@@ -1,0 +1,9 @@
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.perspectivev3
+profile
+*.moved-aside
+DerivedData
+xcuserdata/*
