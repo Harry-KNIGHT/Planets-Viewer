@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct PlanetsViewerApp: App {
+    @State private var style: ImmersionStyle = .mixed
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -17,5 +19,6 @@ struct PlanetsViewerApp: App {
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
         }
+        .immersionStyle(selection: $style, in: .mixed)
     }
 }

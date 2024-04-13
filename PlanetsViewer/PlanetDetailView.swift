@@ -12,28 +12,42 @@ import RealityKitContent
 struct PlanetDetailView: View {
     let planet: Planet
 
+    @Environment(\.openImmersiveSpace) private var  openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) private var  dismissImmersiveSpace
+
     var body: some View {
-        HStack(alignment: .center) {
-            VStack(alignment: .leading, spacing: 16) {
-                Text(planet.name)
-                    .font(.largeTitle)
-                Text(planet.description)
-                    .multilineTextAlignment(.leading)
-                    .font(.title2)
+        makeBody()
+            .onAppear {
+                Task {
+                    await openImmersiveSpace(id: "ImmersiveSpace")
+                }
             }
-            makeModel3D(named: planet.name)
+            .onDisappear {
+                Task {
+                    await dismissImmersiveSpace()
+                }
+            }
+    }
+
+    private func makeBody() -> some View {
+        HStack(alignment: .center) {
+            makeTitleAndDescription()
+            Image(planet.name)
+                .resizable()
+                .scaledToFit()
+                .shadow(radius: 10)
         }
         .padding(16)
         .navigationTitle("Planets Viewer")
     }
-    
-    func makeModel3D(named: String) -> some View {
-        Model3D(named: named, bundle: realityKitContentBundle) { model in
-            model
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-        } placeholder: {
-            ProgressView()
+
+    private func makeTitleAndDescription() -> some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(planet.name)
+                .font(.extraLargeTitle)
+            Text(planet.description)
+                .multilineTextAlignment(.leading)
+                .font(.title2)
         }
     }
 }
