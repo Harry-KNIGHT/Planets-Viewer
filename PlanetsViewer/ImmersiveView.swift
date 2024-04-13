@@ -12,8 +12,9 @@ import RealityKitContent
 struct ImmersiveView: View {
     var body: some View {
         RealityView { content in
-            // Add the initial RealityKit content
             if let scene = try? await Entity(named: "Sun", in: realityKitContentBundle) {
+                scene.position = [-1.2, 1.2, -1.75]
+                scene.scale = [3, 3, 3]
                 content.add(scene)
             }
         }
