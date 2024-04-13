@@ -17,7 +17,7 @@ struct PlanetsViewerApp: App {
         }
 
         ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+            PlanetImmersiveView()
         }
         .immersionStyle(selection: $style, in: .mixed)
     }
