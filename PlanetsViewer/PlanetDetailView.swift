@@ -19,9 +19,8 @@ struct PlanetDetailView: View {
     var body: some View {
         makeBody()
             .onAppear {
+                planetToDisplayHelper.selectedPlanetToDisplay(planet: planet)
                 Task {
-                    planetToDisplayHelper.selectedPlanetToDisplay(planet: planet)
-
                     await openImmersiveSpace(id: "ImmersiveSpace")
                 }
             }
