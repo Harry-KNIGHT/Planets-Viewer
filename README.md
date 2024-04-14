@@ -2,7 +2,7 @@
 
 Welcome to Planets Viewer, a playground for exploring the cosmos through the lens of RealityKit and visionOS development. This project is fueled by a passion for planets and astronomy, leveraging the power of `.usdz` files sourced from RealityComposerPro.
 
-<img src="https://github.com/Harry-KNIGHT/Planets-Viewer/assets/63256761/d0ab5f3f-e152-4ee8-a35a-780d1b1f2fe3" width="600">
+<img src="https://github.com/Harry-KNIGHT/Planets-Viewer/assets/63256761/eb6deab4-d86b-48a8-9032-25360fd321c9">
 
 ## Inspiration
 
