@@ -9,12 +9,12 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
-struct SunView: View {
+struct GlobeView: View {
     @Environment(PlanetToDisplayHelper.self) var helper
-
+    var module: Module
     var body: some View {
         RealityView { content in
-            if let sunEntity = try? await Entity(named: "Sun", in: realityKitContentBundle) {
+            if let sunEntity = try? await Entity(named: module.name, in: realityKitContentBundle) {
                 sunEntity.scale = [3, 3, 3]
                 content.add(sunEntity)
             }
@@ -26,5 +26,5 @@ struct SunView: View {
 }
 
 #Preview {
-    SunView()
+    GlobeView(module: .mercury)
 }

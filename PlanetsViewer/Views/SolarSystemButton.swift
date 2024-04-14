@@ -15,11 +15,12 @@ struct SolarSystemButton: View {
 
     var body: some View {
         Button {
+            helper.selectedModule = module
             Task {
                 if helper.isShowingSolar {
-                    dismissImmersiveSpace(id: "SunGlobe")
+                    dismissImmersiveSpace(id: "Globe")
                 } else {
-                    openImmersiveSpace(id: "SunGlobe")
+                    openImmersiveSpace(id: "Globe")
                 }
             }
         } label: {
