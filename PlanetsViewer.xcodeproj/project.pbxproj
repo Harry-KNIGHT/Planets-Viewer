@@ -44,6 +44,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C657F012BCC34F900787856 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7A1BDAD2BC9B1F900AEB53B /* ContentView.swift */,
+				F7A1BDAF2BC9B1F900AEB53B /* ImmersiveView.swift */,
+				F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C657F022BCC351200787856 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3C657F032BCC352C00787856 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C657EFF2BCBB69A00787856 /* PlanetToDisplayHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F7A1BD9B2BC9B1F900AEB53B = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				F7A1BDAB2BC9B1F900AEB53B /* PlanetsViewerApp.swift */,
-				F7A1BDAD2BC9B1F900AEB53B /* ContentView.swift */,
-				F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */,
-				F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */,
-				F7A1BDAF2BC9B1F900AEB53B /* ImmersiveView.swift */,
-				3C657EFF2BCBB69A00787856 /* PlanetToDisplayHelper.swift */,
-				F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */,
+				3C657F022BCC351200787856 /* Entities */,
+				3C657F012BCC34F900787856 /* Views */,
+				3C657F032BCC352C00787856 /* Helpers */,
 				F7A1BDB62BC9B1FA00AEB53B /* Info.plist */,
+				F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */,
 				F7A1BDB32BC9B1FA00AEB53B /* Preview Content */,
 			);
 			path = PlanetsViewer;
