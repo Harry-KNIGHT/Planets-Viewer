@@ -23,16 +23,8 @@ struct PlanetsViewerApp: App {
         WindowGroup(id: "SunGlobe") {
                 SunView()
                     .environment(planetToDisplayHelper)
-
         }
         .windowStyle(.volumetric)
         .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
-
-//        ImmersiveSpace(id: "ImmersiveSpace") {
-//            if let selectedPlanet = planetToDisplayHelper.selectedPlanet {
-//                PlanetImmersiveView(planet: selectedPlanet)
-//            }
-//        }
-//        .immersionStyle(selection: $style, in: .mixed)
     }
 }

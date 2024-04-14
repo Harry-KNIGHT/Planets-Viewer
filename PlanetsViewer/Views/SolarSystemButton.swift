@@ -11,6 +11,7 @@ struct SolarSystemButton: View {
     @Environment(PlanetToDisplayHelper.self) private var helper
     @Environment(\.openWindow) private var openImmersiveSpace
     @Environment(\.openWindow) private var dismissImmersiveSpace
+    var module: Module
 
     var body: some View {
         Button {
@@ -22,12 +23,12 @@ struct SolarSystemButton: View {
                 }
             }
         } label: {
-            Text("Show Sun")
+            Text(module.callToAction)
         }
     }
 }
 
 #Preview {
-    SolarSystemButton()
+    SolarSystemButton(module: .mercury)
         .environment(PlanetToDisplayHelper())
 }

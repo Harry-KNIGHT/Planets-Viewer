@@ -10,10 +10,10 @@ import RealityKit
 import RealityKitContent
 
 struct PlanetImmersiveView: View {
-    let planet: Planet
+    let module: Module
     var body: some View {
         RealityView { content in
-            if let scene = try? await Entity(named: planet.name, in: realityKitContentBundle) {
+            if let scene = try? await Entity(named: module.name, in: realityKitContentBundle) {
                 scene.position = [-1.2, 1.2, -1.75]
                 scene.scale = [3, 3, 3]
                 content.add(scene)
@@ -23,5 +23,5 @@ struct PlanetImmersiveView: View {
 }
 
 #Preview(immersionStyle: .mixed) {
-    PlanetImmersiveView(planet: Planet.sample[1])
+    PlanetImmersiveView(module: .mercury)
 }

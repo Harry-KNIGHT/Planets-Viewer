@@ -12,14 +12,14 @@ import RealityKitContent
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            List(Planet.sample) { planet in
-                NavigationLink(destination: PlanetDetailView(planet: planet)) {
+            List(Module.allCases) { module in
+                NavigationLink(destination: PlanetDetailView(module: module)) {
                     HStack(alignment: .center, spacing: 10) {
-                        makeModel3D(named: planet.name)
+                        makeModel3D(named: module.name)
                         VStack(alignment: .leading, spacing: 10) {
-                            Text(planet.name)
+                            Text(module.name)
                                 .font(.title)
-                            Text(planet.description)
+                            Text(module.description)
                                 .lineLimit(2)
                                 .font(.title3)
                         }

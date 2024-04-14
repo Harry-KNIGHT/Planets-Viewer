@@ -10,12 +10,12 @@ import RealityKit
 import RealityKitContent
 
 struct PlanetDetailView: View {
-    let planet: Planet
 
     @Environment(\.openImmersiveSpace) private var  openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) private var  dismissImmersiveSpace
     @Environment(PlanetToDisplayHelper.self) private var planetToDisplayHelper
 
+    var module: Module
     var body: some View {
         makeBody()
     }
@@ -23,7 +23,7 @@ struct PlanetDetailView: View {
     private func makeBody() -> some View {
         HStack(alignment: .center) {
             makeTitleAndDescription()
-            Image(planet.name)
+            Image(module.name)
                 .resizable()
                 .scaledToFit()
                 .shadow(radius: 10)
@@ -34,19 +34,19 @@ struct PlanetDetailView: View {
 
     private func makeTitleAndDescription() -> some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(planet.name)
+            Text(module.name)
                 .font(.extraLargeTitle)
-            Text(planet.description)
+            Text(module.description)
                 .multilineTextAlignment(.leading)
                 .font(.title2)
 
-            SolarSystemButton()
+            SolarSystemButton(module: module)
         }
     }
 }
 
 #Preview {
     NavigationStack {
-        PlanetDetailView(planet: Planet.sample[0])
+        PlanetDetailView(module: Module.sun)
     }
 }

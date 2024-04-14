@@ -16,7 +16,7 @@
 		F7A1BDB02BC9B1F900AEB53B /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDAF2BC9B1F900AEB53B /* ImmersiveView.swift */; };
 		F7A1BDB22BC9B1FA00AEB53B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */; };
 		F7A1BDB52BC9B1FA00AEB53B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A1BDB42BC9B1FA00AEB53B /* Preview Assets.xcassets */; };
-		F7A1BDBD2BC9B9C700AEB53B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */; };
+		F7A1BDBD2BC9B9C700AEB53B /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDBC2BC9B9C700AEB53B /* Module.swift */; };
 		F7A1BDBF2BC9BDC900AEB53B /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7A1BDB42BC9B1FA00AEB53B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7A1BDB62BC9B1FA00AEB53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		F7A1BDBC2BC9B9C700AEB53B /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 		3C657F022BCC351200787856 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */,
+				F7A1BDBC2BC9B9C700AEB53B /* Module.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 				3C657F002BCBB69A00787856 /* PlanetToDisplayHelper.swift in Sources */,
 				F7A1BDB02BC9B1F900AEB53B /* ImmersiveView.swift in Sources */,
 				F7A1BDBF2BC9BDC900AEB53B /* PlanetDetailView.swift in Sources */,
-				F7A1BDBD2BC9B9C700AEB53B /* Planet.swift in Sources */,
+				F7A1BDBD2BC9B9C700AEB53B /* Module.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
