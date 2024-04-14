@@ -14,9 +14,9 @@ struct GlobeView: View {
     var module: Module
     var body: some View {
         RealityView { content in
-            if let sunEntity = try? await Entity(named: module.name, in: realityKitContentBundle) {
-                sunEntity.scale = [3, 3, 3]
-                content.add(sunEntity)
+            if let globeEntity = try? await Entity(named: module.name, in: realityKitContentBundle) {
+                globeEntity.scale = [2.5, 2.5, 2.5]
+                content.add(globeEntity)
             }
         }
         .onDisappear {
