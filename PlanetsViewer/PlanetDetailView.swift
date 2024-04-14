@@ -26,6 +26,7 @@ struct PlanetDetailView: View {
                 }
             }
             .onDisappear {
+                planetToDisplayHelper.selectedPlanet = nil
                 Task {
                     await dismissImmersiveSpace()
                 }

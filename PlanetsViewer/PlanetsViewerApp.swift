@@ -20,7 +20,9 @@ struct PlanetsViewerApp: App {
         }
 
         ImmersiveSpace(id: "ImmersiveSpace") {
-            PlanetImmersiveView(planet: planetToDisplayHelper.selectedPlanet ?? Planet.sample.first!)
+            if let selectedPlanet = planetToDisplayHelper.selectedPlanet {
+                PlanetImmersiveView(planet: selectedPlanet)
+            }
         }
         .immersionStyle(selection: $style, in: .mixed)
     }
