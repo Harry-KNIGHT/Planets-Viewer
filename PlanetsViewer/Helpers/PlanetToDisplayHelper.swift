@@ -10,6 +10,7 @@ import Foundation
 @Observable
 final class PlanetToDisplayHelper {
     var selectedPlanet: Planet?
+    var isShowingSolar = false
 
     func selectedPlanetToDisplay(planet: Planet) {
         selectedPlanet = planet

@@ -19,11 +19,20 @@ struct PlanetsViewerApp: App {
 
         }
 
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            if let selectedPlanet = planetToDisplayHelper.selectedPlanet {
-                PlanetImmersiveView(planet: selectedPlanet)
-            }
+        // A volume that displays a globe.
+        WindowGroup(id: "SunGlobe") {
+                SunView()
+                    .environment(planetToDisplayHelper)
+
         }
-        .immersionStyle(selection: $style, in: .mixed)
+        .windowStyle(.volumetric)
+        .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
+
+//        ImmersiveSpace(id: "ImmersiveSpace") {
+//            if let selectedPlanet = planetToDisplayHelper.selectedPlanet {
+//                PlanetImmersiveView(planet: selectedPlanet)
+//            }
+//        }
+//        .immersionStyle(selection: $style, in: .mixed)
     }
 }

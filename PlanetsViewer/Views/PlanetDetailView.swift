@@ -18,18 +18,6 @@ struct PlanetDetailView: View {
 
     var body: some View {
         makeBody()
-            .onAppear {
-                planetToDisplayHelper.selectedPlanetToDisplay(planet: planet)
-                Task {
-                    await openImmersiveSpace(id: "ImmersiveSpace")
-                }
-            }
-            .onDisappear {
-                planetToDisplayHelper.selectedPlanet = nil
-                Task {
-                    await dismissImmersiveSpace()
-                }
-            }
     }
 
     private func makeBody() -> some View {
@@ -51,6 +39,8 @@ struct PlanetDetailView: View {
             Text(planet.description)
                 .multilineTextAlignment(.leading)
                 .font(.title2)
+
+            SolarSystemButton()
         }
     }
 }
