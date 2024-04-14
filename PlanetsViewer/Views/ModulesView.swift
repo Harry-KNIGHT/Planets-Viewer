@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ModulesView.swift
 //  PlanetsViewer
 //
 //  Created by Harry Knight on 12/04/2024.
@@ -9,7 +9,7 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
-struct ContentView: View {
+struct ModulesView: View {
     var body: some View {
         NavigationStack {
             List(Module.allCases) { module in
@@ -44,5 +44,5 @@ struct ContentView: View {
 }
 
 #Preview(windowStyle: .automatic) {
-    ContentView()
+    ModulesView()
 }
