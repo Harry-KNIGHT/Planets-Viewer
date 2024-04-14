@@ -14,7 +14,7 @@ struct PlanetsViewerApp: App {
     
     var body: some Scene {
         WindowGroup("Planet Viewer") {
-            ContentView()
+            ModulesView()
                 .environment(planetToDisplayHelper)
 
         }
