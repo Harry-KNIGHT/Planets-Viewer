@@ -14,11 +14,14 @@ struct PlanetDetailView: View {
 
     @Environment(\.openImmersiveSpace) private var  openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) private var  dismissImmersiveSpace
+    @Environment(PlanetToDisplayHelper.self) private var planetToDisplayHelper
 
     var body: some View {
         makeBody()
             .onAppear {
                 Task {
+                    planetToDisplayHelper.selectedPlanetToDisplay(planet: planet)
+
                     await openImmersiveSpace(id: "ImmersiveSpace")
                 }
             }

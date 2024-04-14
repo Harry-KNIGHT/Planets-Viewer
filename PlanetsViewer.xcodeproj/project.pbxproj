@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C657F002BCBB69A00787856 /* PlanetToDisplayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C657EFF2BCBB69A00787856 /* PlanetToDisplayHelper.swift */; };
 		F7A1BDAA2BC9B1F900AEB53B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F7A1BDA92BC9B1F900AEB53B /* RealityKitContent */; };
 		F7A1BDAC2BC9B1F900AEB53B /* PlanetsViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDAB2BC9B1F900AEB53B /* PlanetsViewerApp.swift */; };
 		F7A1BDAE2BC9B1F900AEB53B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BDAD2BC9B1F900AEB53B /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C657EFF2BCBB69A00787856 /* PlanetToDisplayHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetToDisplayHelper.swift; sourceTree = "<group>"; };
 		F7A1BDA42BC9B1F900AEB53B /* PlanetsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A1BDA82BC9B1F900AEB53B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F7A1BDAB2BC9B1F900AEB53B /* PlanetsViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewerApp.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				F7A1BDBE2BC9BDC900AEB53B /* PlanetDetailView.swift */,
 				F7A1BDBC2BC9B9C700AEB53B /* Planet.swift */,
 				F7A1BDAF2BC9B1F900AEB53B /* ImmersiveView.swift */,
+				3C657EFF2BCBB69A00787856 /* PlanetToDisplayHelper.swift */,
 				F7A1BDB12BC9B1FA00AEB53B /* Assets.xcassets */,
 				F7A1BDB62BC9B1FA00AEB53B /* Info.plist */,
 				F7A1BDB32BC9B1FA00AEB53B /* Preview Content */,
@@ -165,6 +168,7 @@
 			files = (
 				F7A1BDAE2BC9B1F900AEB53B /* ContentView.swift in Sources */,
 				F7A1BDAC2BC9B1F900AEB53B /* PlanetsViewerApp.swift in Sources */,
+				3C657F002BCBB69A00787856 /* PlanetToDisplayHelper.swift in Sources */,
 				F7A1BDB02BC9B1F900AEB53B /* ImmersiveView.swift in Sources */,
 				F7A1BDBF2BC9BDC900AEB53B /* PlanetDetailView.swift in Sources */,
 				F7A1BDBD2BC9B9C700AEB53B /* Planet.swift in Sources */,
