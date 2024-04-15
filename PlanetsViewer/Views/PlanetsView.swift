@@ -12,11 +12,11 @@ import RealityKitContent
 struct ModulesView: View {
     var body: some View {
         NavigationStack {
-            List(Module.allCases) { module in
-                NavigationLink(destination: PlanetDetailView(module: module)) {
+            List(Planet.allCases) { planet in
+                NavigationLink(destination: PlanetDetailView(planet: planet)) {
                     HStack(alignment: .center, spacing: 10) {
-                        makeModel3D(module: module)
-                        makeTitleAndDescription(module: module)
+                        makeModel3D(planet: planet)
+                        makeTitleAndDescription(planet: planet)
                     }
                     .padding()
                 }
@@ -25,18 +25,18 @@ struct ModulesView: View {
         }
     }
 
-    func makeTitleAndDescription(module: Module) -> some View {
+    func makeTitleAndDescription(planet: Planet) -> some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(module.name)
+            Text(planet.name)
                 .font(.title)
-            Text(module.description)
+            Text(planet.description)
                 .lineLimit(2)
                 .font(.title3)
         }
     }
 
-    func makeModel3D(module: Module) -> some View {
-        Model3D(named: module.name, bundle: realityKitContentBundle) { model in
+    func makeModel3D(planet: Planet) -> some View {
+        Model3D(named: planet.name, bundle: realityKitContentBundle) { model in
             model
                 .resizable()
                 .aspectRatio(contentMode: .fit)

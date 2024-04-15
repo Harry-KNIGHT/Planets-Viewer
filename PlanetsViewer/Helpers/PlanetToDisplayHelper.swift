@@ -9,10 +9,10 @@ import Foundation
 
 @Observable
 final class PlanetToDisplayHelper {
-    var selectedModule: Module?
+    var selectedPlanet: Planet?
     var isShowingSolar = false
 
-    func selectedPlanetToDisplay(module: Module) {
-        selectedModule = module
+    func selectedPlanetToDisplay(planet: Planet) {
+        selectedPlanet = planet
     }
 }

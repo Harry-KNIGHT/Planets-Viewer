@@ -11,11 +11,11 @@ struct SolarSystemButton: View {
     @Environment(PlanetToDisplayHelper.self) private var helper
     @Environment(\.openWindow) private var openImmersiveSpace
     @Environment(\.openWindow) private var dismissImmersiveSpace
-    var module: Module
+    var planet: Planet
 
     var body: some View {
         Button {
-            helper.selectedModule = module
+            helper.selectedPlanet = planet
             Task {
                 if helper.isShowingSolar {
                     dismissImmersiveSpace(id: "Globe")
@@ -24,12 +24,12 @@ struct SolarSystemButton: View {
                 }
             }
         } label: {
-            Text(module.callToAction)
+            Text(planet.callToAction)
         }
     }
 }
 
 #Preview {
-    SolarSystemButton(module: .mercury)
+    SolarSystemButton(planet: .mercury)
         .environment(PlanetToDisplayHelper())
 }

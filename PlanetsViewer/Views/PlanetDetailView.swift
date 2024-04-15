@@ -15,7 +15,8 @@ struct PlanetDetailView: View {
     @Environment(\.dismissImmersiveSpace) private var  dismissImmersiveSpace
     @Environment(PlanetToDisplayHelper.self) private var planetToDisplayHelper
 
-    var module: Module
+    var planet: Planet
+    
     var body: some View {
         makeBody()
     }
@@ -23,7 +24,7 @@ struct PlanetDetailView: View {
     private func makeBody() -> some View {
         HStack(alignment: .center) {
             makeTitleAndDescription()
-            Image(module.name)
+            Image(planet.name)
                 .resizable()
                 .scaledToFit()
                 .shadow(radius: 10)
@@ -34,19 +35,19 @@ struct PlanetDetailView: View {
 
     private func makeTitleAndDescription() -> some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(module.name)
+            Text(planet.name)
                 .font(.extraLargeTitle)
-            Text(module.description)
+            Text(planet.description)
                 .multilineTextAlignment(.leading)
                 .font(.title2)
 
-            SolarSystemButton(module: module)
+            SolarSystemButton(planet: planet)
         }
     }
 }
 
 #Preview {
     NavigationStack {
-        PlanetDetailView(module: Module.sun)
+        PlanetDetailView(planet: Planet.sun)
     }
 }

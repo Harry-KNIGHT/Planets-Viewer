@@ -1,5 +1,5 @@
 //
-//  Module.swift
+//  Planet.swift
 //  PlanetsViewer
 //
 //  Created by Harry Knight on 12/04/2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Module: String, Identifiable, CaseIterable, Equatable {
+enum Planet: String, Identifiable, CaseIterable, Equatable {
     case sun, mercury, uranus, venus
     var id: Self { self }
     var name: String { rawValue.capitalized }
