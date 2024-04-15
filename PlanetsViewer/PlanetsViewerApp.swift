@@ -21,8 +21,8 @@ struct PlanetsViewerApp: App {
 
         // A volume that displays a globe.
         WindowGroup(id: "Globe") {
-            if let planet = planetToDisplayHelper.selectedModule {
-                GlobeView(module: planet)
+            if let planet = planetToDisplayHelper.selectedPlanet {
+                GlobeView(planet: planet)
                     .environment(planetToDisplayHelper)
 
             }

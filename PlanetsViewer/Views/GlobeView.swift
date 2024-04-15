@@ -11,10 +11,11 @@ import RealityKitContent
 
 struct GlobeView: View {
     @Environment(PlanetToDisplayHelper.self) var helper
-    var module: Module
+    var planet: Planet
+    
     var body: some View {
         RealityView { content in
-            if let globeEntity = try? await Entity(named: module.name, in: realityKitContentBundle) {
+            if let globeEntity = try? await Entity(named: planet.name, in: realityKitContentBundle) {
                 globeEntity.scale = [2.5, 2.5, 2.5]
                 content.add(globeEntity)
             }
@@ -26,5 +27,5 @@ struct GlobeView: View {
 }
 
 #Preview {
-    GlobeView(module: .mercury)
+    GlobeView(planet: .mercury)
 }
