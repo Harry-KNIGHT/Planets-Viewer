@@ -19,14 +19,14 @@ struct PlanetsViewerApp: App {
 
         }
 
-        // A volume that displays a globe.
-        WindowGroup(for: Planet.self) { $planet in
-            if let planet {
-                GlobeView(planet: planet)
-                    .environment(planetToDisplayHelper)
-            }
-        }
-        .windowStyle(.volumetric)
-        .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
+      // A volume that displays a globe.
+      WindowGroup(for: Planet.self) { $planet in
+          if let planet {
+            GlobeView(planet: planet)
+                .environment(planetToDisplayHelper)
+          }
+      }
+      .windowStyle(.volumetric)
+      .defaultSize(width: 0.6, height: 0.6, depth: 1, in: .meters)
     }
 }
