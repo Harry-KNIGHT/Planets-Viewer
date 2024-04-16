@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Planet: String, Identifiable, CaseIterable, Equatable {
+enum Planet: String, Identifiable, CaseIterable, Equatable, Codable {
     case sun, mercury, uranus, venus
     var id: Self { self }
     var name: String { rawValue.capitalized }
