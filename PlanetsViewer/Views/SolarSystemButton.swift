@@ -18,9 +18,9 @@ struct SolarSystemButton: View {
             helper.selectedPlanet = planet
             Task {
                 if helper.isShowingSolar {
-                  dismissImmersiveSpace(id: planet.id.rawValue, value: planet)
+                    dismissImmersiveSpace(id: "Globe")
                 } else {
-                    openImmersiveSpace(id: planet.id.rawValue, value: planet)
+                    openImmersiveSpace(id: "Globe")
                 }
             }
         } label: {
