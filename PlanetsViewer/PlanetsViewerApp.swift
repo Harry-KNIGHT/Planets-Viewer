@@ -20,11 +20,10 @@ struct PlanetsViewerApp: App {
         }
 
         // A volume that displays a globe.
-        WindowGroup(id: "Globe") {
-            if let planet = planetToDisplayHelper.selectedPlanet {
+        WindowGroup(for: Planet.self) { $planet in
+            if let planet {
                 GlobeView(planet: planet)
                     .environment(planetToDisplayHelper)
-
             }
         }
         .windowStyle(.volumetric)
